@@ -1,1 +1,24 @@
-<p>dashboard works!</p>
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer mode="side">
+    <p>FinanceFlow</p>
+
+    <p>{{ userName }}</p>
+
+    <div class="button-container">
+      <button mat-button>Create new budget</button>
+      <button mat-button>Logout</button>
+    </div>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <button
+      type="button"
+      class="menuBtn"
+      mat-fab
+      aria-label="button with a menu icon"
+      (click)="drawer.toggle()"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+</mat-drawer-container>
