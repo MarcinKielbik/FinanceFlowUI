@@ -8,6 +8,9 @@ import { Router } from '@angular/router';
   styleUrl: './login.component.scss'
 })
 export class LoginComponent {
+login() {
+throw new Error('Method not implemented.');
+}
 
   hide: boolean = true;
   loginForm!: FormGroup;
