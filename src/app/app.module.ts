@@ -10,6 +10,10 @@ import { LoginComponent } from './components/login/login.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { MatButtonModule } from '@angular/material/button';
     AppRoutingModule,
     MatIconModule,
     MatSidenavModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    MatInputModule
   ],
   providers: [
     provideClientHydration(),
